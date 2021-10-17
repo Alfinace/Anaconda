@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anocanda Navigator</title>
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <div class="box-login">
+      <div class="login">
+      <span id="close-login">X</span>
+        <h1>Connexion</h1>
+        <form class="form-login" action="" method="post">
+          <input type="text" placeholder="Identity">
+          <input type="password" placeholder="Password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    <header>
+      <div class="menu">
+        <ul class="submenu">
+          <li><span>File</span>
+            <ul>
+              <li>
+                <p>Preferences</p>
+                <p>Ctrl+P</p>
+              </li>
+              <li>
+                <p>Restart</p>
+                <p>Ctrl+R</p>
+              </li>
+              <li>
+                <p>Quit</p>
+                <p>Ctrl+Q</p>
+              </li>
+            </ul>
+          </li>
+          <li><span>Help</span>
+            <ul>
+              <li>
+                <p>Online Documentation</p>
+                <p></p>
+              </li>
+              <li>
+                <p>Logs reviewer</p>
+                <p>F6</p>
+              </li>
+              <li style="border-top: 1px solid gray;">
+                <p>About</p>
+                <p></p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="head">
+        <img src="./images/logo.png" alt="">
+        <button id="btn-signin" class="btn-sign-in">Sign in</button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <ul class="link">
+          <li>
+            <a href="#">
+              <img src="./icon/home.png" alt="" srcset="">
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./icon/env.png" alt="" srcset="">
+              <span>Environements</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./icon/learn.png" alt="" srcset="">
+              <span>Learning</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./icon/users.png" alt="" srcset="">
+              <span>Community</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="link-bottom">
+          <li>
+            <a href="#">Documentation</a>
+          </li>
+          <li>
+            <a href="#">Anaconda Blog</a>
+          </li>
+          <li class="box-icon">
+              <img src="./icon/twitter.png" alt="" srcset="">
+              <img src="./icon/youtube.png" alt="" srcset="">
+              <img src="./icon/github.png" alt="" srcset="">
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <main>
+          <div class="head-a">
+            <div class="box-btn">
+              <a href="#">Documentation(25)</a>
+              <a href="#">Training(1)</a>
+              <a href="#">Video(21)</a>
+              <a href="#">Web(20)</a>
+            </div>
+            <div class="box-search">
+              <input type="text" placeholder="Search">
+              <img src="./icon/search.png" alt="" srcset="">
+            </div>
+          </div>
+          <div class="data">
+            <div class="container-data">
+              <div class="card">
+                <img src="./images/python.png" alt="" srcset="">
+                <hr>
+                <p>Python Tutorial</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Python</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/python.png" alt="" srcset="">
+                <hr>
+                <p>Python Tutorial</p>
+                <button onclick="launchApp('Python'),this.innerHTML ='stop'">Launch</button>
+                <div class="description">
+                  <strong>Python</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/r.png" alt="" srcset="">
+                <hr>
+                <p>R Docs</p>
+                <button onclick="launchApp('R Docs'),this.innerHTML ='stop'">Launch</button>
+                <div class="description">
+                  <strong>R</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+
+              </div>
+              <div class="card">
+                <img src="./images/logo.png" alt="" srcset="">
+                <hr>
+                <p>Anaconda Documentation</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Anaconda</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/jupyter.png" alt="" srcset="">
+                <hr>
+                <p>Jupyter Tutorial</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Jupyter</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/learn.png" alt="" srcset="">
+                <hr>
+                <p>Learn Tutorial</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Learn</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/scipy.png" alt="" srcset="">
+                <hr>
+                <p>Scipy Tutorial</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Scipy</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/matploitlib.png" alt="" srcset="">
+                <hr>
+                <p>Matploitlib Tutorial</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Matploitlib</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/orange.png" alt="" srcset="">
+                <hr>
+                <p>Orange Tutorial</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Orange</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/logo.png" alt="" srcset="">
+                <hr>
+                <p>Anaconda Documentation</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Anaconda</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/pandas.png" alt="" srcset="">
+                <hr>
+                <p>Pandas Documentation</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Pandas</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/r.png" alt="" srcset="">
+                <hr>
+                <p>R Docs</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>R</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/scipy.png" alt="" srcset="">
+                <hr>
+                <p>Scipy Tutorial</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Scipy</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/matploitlib.png" alt="" srcset="">
+                <hr>
+                <p>Matploitlib Tutorial</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Matploitlib</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/vscode.png" alt="" srcset="">
+                <hr>
+                <p>Vscode Guide</p>
+                <button>Launch</button>
+                <div class="description">
+                  <strong>Vscode</strong>
+                  Web pages are not the only place where JavaScript is used.
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="foot">
+            <p>Launching <strong id="appName">vscode</strong></p>
+            <div class="loading-box">
+              <div></div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+</body>
+<script src="./js/app.js"></script>
+</html>
